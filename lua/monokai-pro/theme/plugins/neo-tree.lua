@@ -29,7 +29,7 @@ M.setup = function(c, config, _)
     },
     NeoTreeWinSeparator = {
       bg = c.editor.background,
-      fg = isBackgroundClear and c.base.black or c.editor.background,
+      fg = c.base.dark,
     },
     NeoTreeRootName = {
       -- bg = C.sideBarSectionHeader.background,
