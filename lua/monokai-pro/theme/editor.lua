@@ -50,7 +50,7 @@ M.setup = function(c, config, hp)
     },
     DiffText = { bg = c.editor.background, fg = c.editor.foreground }, -- diff mode: Changed text within a changed line |diff.txt|
     EndOfBuffer = {
-      fg = c.editor.background,
+      fg = c.editorLineNumber.foreground,
     }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     ErrorMsg = {
       bg = c.editor.background,
