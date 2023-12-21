@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.18.1](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.18.0...v1.18.1) (2023-12-08)
+
+
+### Bug Fixes
+
+* Missing background in TelescopeSelection ([7a82aa3](https://github.com/loctvl842/monokai-pro.nvim/commit/7a82aa3a97a2ef3e9c3db3fa8a83e1183562157d))
+* Missing background in TelescopeSelection ([149297e](https://github.com/loctvl842/monokai-pro.nvim/commit/149297e3a07c9dd2565ca5f1f16ffe34633ac8d4))
+
+## [1.18.0](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.17.0...v1.18.0) (2023-12-08)
+
+
+### Features
+
+* customize color palette (https://github.com/loctvl842/monokai-pro.nvim/issues/94) ([6b1f544](https://github.com/loctvl842/monokai-pro.nvim/commit/6b1f544361833a548702e9d548ad994ab0db88fb))
+
+## [1.17.0](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.16.0...v1.17.0) (2023-12-05)
+
+
+### Features
+
+* Improve syntax highlighting for treesitter parameters ([78376ed](https://github.com/loctvl842/monokai-pro.nvim/commit/78376ed8493fe149f872a6a34fc5c6c48375f008))
+
 ## [1.16.0](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.15.0...v1.16.0) (2023-10-30)
 
 
