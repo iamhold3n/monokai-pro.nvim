@@ -1,7 +1,7 @@
 <div align="center">
     <div class="b-header">
         <a class="active" href="https://github.com/loctvl842/monokai-pro.nvim">
-            <img style="width: 16rem" src="https://user-images.githubusercontent.com/80513079/209661594-1fa9abea-825a-4b1c-91d6-f6634d68f94e.svg" alt="">
+            <img width="484" alt="img_v3_0274_94b96554-6c31-431b-a95e-2de719b493hu" src="https://github.com/loctvl842/monokai-pro.nvim/assets/80513079/24a697cf-0bae-4bde-a059-909ca665c333">
             <h1>Monokai Pro</h1>
             <h2>Beautiful functionality for professional developers</h2>
         </a>
