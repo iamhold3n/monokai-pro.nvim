@@ -1,5 +1,40 @@
 # Changelog
 
+## [1.19.5](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.19.4...v1.19.5) (2024-01-23)
+
+
+### Bug Fixes
+
+* notify background wrong for noice ([05f6c9e](https://github.com/loctvl842/monokai-pro.nvim/commit/05f6c9e302612e7732f02cec0ecea708ad4be878))
+
+## [1.19.4](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.19.3...v1.19.4) (2024-01-22)
+
+
+### Bug Fixes
+
+* **treesitter:** The markdown file lost its colors due to an update in `treesitter`. ([d512a58](https://github.com/loctvl842/monokai-pro.nvim/commit/d512a5814c626d0052a669b52ee8627f626154a9))
+
+## [1.19.3](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.19.2...v1.19.3) (2024-01-22)
+
+
+### Bug Fixes
+
+* **treesitter:** new update breaks python ([2c5fe64](https://github.com/loctvl842/monokai-pro.nvim/commit/2c5fe64ea44a05401b08be3eaaef8e69f20afbbc))
+
+## [1.19.2](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.19.1...v1.19.2) (2024-01-22)
+
+
+### Bug Fixes
+
+* **lualine:** Loading wrong colors ([379d676](https://github.com/loctvl842/monokai-pro.nvim/commit/379d676850ad695837809a4adef1671a69779d60))
+
+## [1.19.1](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.19.0...v1.19.1) (2024-01-22)
+
+
+### Bug Fixes
+
+* Update the bufferline icon background when changing the ColorsScheme. ([d14bccf](https://github.com/loctvl842/monokai-pro.nvim/commit/d14bccfddc065c72b12bcfb5e3ccdf7f7ebb3742))
+
 ## [1.19.0](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.18.1...v1.19.0) (2024-01-08)
 
 
