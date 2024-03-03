@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.21.0](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.20.2...v1.21.0) (2024-02-11)
+
+
+### Features
+
+* Merge pull request [#110](https://github.com/loctvl842/monokai-pro.nvim/issues/110) from Red-M/feature/override_colourscheme ([ba4bbbc](https://github.com/loctvl842/monokai-pro.nvim/commit/ba4bbbc12c65d0c781f89501cfa486a5377c9764))
+
+## [1.20.2](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.20.1...v1.20.2) (2024-02-09)
+
+
+### Bug Fixes
+
+* Merge pull request [#97](https://github.com/loctvl842/monokai-pro.nvim/issues/97) from sartak/master ([711c10c](https://github.com/loctvl842/monokai-pro.nvim/commit/711c10cbbe57c90cb3e1c437da46f100022b5a95))
+
 ## [1.20.1](https://github.com/loctvl842/monokai-pro.nvim/compare/v1.20.0...v1.20.1) (2024-01-31)
 
 

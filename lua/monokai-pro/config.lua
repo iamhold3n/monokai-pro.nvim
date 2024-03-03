@@ -3,6 +3,7 @@ local util = require("monokai-pro.util")
 ---@field plugins? PluginConfig
 ---@field override? fun(c: Colorscheme)
 ---@field overridePalette? fun(filter: Filter) A function to override palette
+---@field overrideScheme? fun(cs: Colorscheme, p: ColorschemeOptions, Config: MonokaiProOptions, hp: Helper) A function to override scheme
 local config = {
   transparent_background = false,
   terminal_colors = true,
@@ -66,7 +67,7 @@ M.setup = function(options)
   config = vim.tbl_deep_extend("force", config, options or {})
   local day_night = config.day_night
   if day_night and day_night.enable then
-    config.filter = util.is_daytime() and day_night.day_filter or day_night.night_filter
+    config.filter = util.extra.is_daytime() and day_night.day_filter or day_night.night_filter
   end
 end
 
