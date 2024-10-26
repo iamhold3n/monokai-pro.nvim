@@ -31,6 +31,7 @@ function M.get(c, config, _)
     ["@punctuation.special"] = { fg = c.base.red }, -- `?` (e.g. {name?: string})
     ["@repeat"] = { fg = c.base.red },
     ["@string.documentation"] = { fg = c.base.dimmed3 },
+    ["@string.escape"] = { fg = c.base.magenta },
     ["@tag"] = { fg = c.base.red },
     ["@tag.attribute"] = { fg = c.base.cyan, italic = styles.tag_attribute.italic },
     ["@tag.delimiter"] = { fg = c.base.dimmed2 }, -- `<`, `>` in `<div>`
@@ -59,10 +60,13 @@ function M.get(c, config, _)
     ["@constant.macro.cpp"] = { fg = c.base.red },
     ["@punctuation.delimiter.cpp"] = { fg = c.sideBar.foreground },
     -- python
-    ["@type.python"] = { fg = c.base.cyan }, -- Class name, bool, str, ...
-    ["@keyword.python"] = { fg = c.base.cyan, italic = styles.keyword.italic },
+    ["@type.python"] = { fg = c.base.white }, -- Class name, bool, str, ...
+    ["@keyword.coroutine.python"] = { fg = c.base.cyan },
+    ["@keyword.exception.python"] = { fg = c.base.red, italic = false },
+    ["@keyword.python"] = { fg = c.base.red, italic = styles.keyword.italic },
     ["@keyword.function.python"] = { fg = c.base.cyan, italic = styles.keyword.italic },
     ["@keyword.import.python"] = { fg = c.base.red },
+    ["@keyword.type.python"] = { fg = c.base.cyan, italic = true },
     ["@attribute.python"] = { fg = c.base.green },
     ["@variable.builtin.python"] = { fg = c.editorSuggestWidget.foreground, italic = true },
     ["@variable.python"] = { fg = c.base.white },
@@ -120,6 +124,15 @@ function M.get(c, config, _)
     ["@markup.strong.markdown_inline"] = { bold = true },
     ["@markup.italic.markdown_inline"] = { italic = true },
     ["@markup.raw.markdown_inline"] = { bg = c.base.dimmed4, fg = c.base.white },
+    -- Golang
+    ["@keyword.function.go"] = { fg = c.base.red },
+    ["@module.go"] = { fg = c.base.white },
+    ["@string.escape.go"] = { fg = c.base.magenta },
+    -- Yaml
+    ["@property.yaml"] = { fg = c.base.red },
+    ["@string.yaml"] = { fg = c.base.yellow },
+    ["@number.yaml"] = { fg = c.base.magenta },
+    ["@punctuation.special.yaml"] = { fg = c.base.white },
   }
   for i = 1, 9 do
     spec["@markup.heading." .. i .. ".markdown"] = { fg = c.base.yellow }

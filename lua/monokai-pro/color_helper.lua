@@ -1,7 +1,7 @@
 ---@class Helper
 local M = {}
 
----@param background? HexColor
+---@param background? HexColor | "NONE"
 local function get_blend_background(background)
   if background ~= nil and background ~= "NONE" then
     return background
@@ -16,6 +16,9 @@ end
 ---@param hex HexColor
 ---@return RGB
 local function hex_to_rgb(hex)
+  if hex == nil then
+    return { r = 0, g = 0, b = 0 }
+  end
   hex = string.lower(hex)
   return {
     r = tonumber(hex:sub(2, 3), 16),
@@ -33,9 +36,12 @@ local function rgb_to_hex(rgb)
   return "#" .. red .. green .. blue
 end
 
----@param hex HexColor
+---@param hex HexColor | "NONE"
 ---@param amt number
-M.lighten = function(hex, amt)
+function M.lighten(hex, amt)
+  -- stylua: ignore
+  if hex == "NONE" then return hex end
+
   local rgb = hex_to_rgb(hex)
   -- over upper
   rgb.r = (rgb.r + amt > 255) and 255 or (rgb.r + amt)
@@ -54,7 +60,7 @@ end
 
 ---@param alpha HexColorAlpha
 ---@param background HexColor
-M.rgba = function(red, green, blue, alpha, background)
+function M.rgba(red, green, blue, alpha, background)
   background = get_blend_background(background)
   local bg_rgb = hex_to_rgb(background)
   -- new color
@@ -64,18 +70,21 @@ M.rgba = function(red, green, blue, alpha, background)
   return rgb_to_hex({ r = red, g = green, b = blue })
 end
 
----@param hexColor HexColor
+---@param hex HexColor | "NONE"
 ---@param alpha HexColorAlpha
 ---@param base? HexColor
-M.blend = function(hexColor, alpha, base)
+function M.blend(hex, alpha, base)
+  -- stylua: ignore
+  if hex == "NONE" then return "NONE" end
+
   base = get_blend_background(base)
-  local rgb = hex_to_rgb(hexColor)
+  local rgb = hex_to_rgb(hex)
   return M.rgba(rgb.r, rgb.g, rgb.b, alpha, base)
 end
 
 ---@param hexColor HexColor
 ---@param base HexColor
-M.extend_hex = function(hexColor, base)
+function M.extend_hex(hexColor, base)
   base = get_blend_background(base)
   local hex6 = string.sub(hexColor, 1, 7)
   local alpha = tonumber(string.sub(hexColor, 8, 9), 16) / 255
